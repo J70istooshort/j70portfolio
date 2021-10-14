@@ -21,6 +21,7 @@ const IndexPage = () => (
       <Link to="/template/">Go to template page</Link> <br />
       <Link to="/minecraftmaps/">My maps!</Link> <br />
       <Link to="/servers/">Servers I run</Link> <br />
+      <Link to="/moderation/">Stuff I mod</Link> <br />
     </p>
   </Layout>
 )
