@@ -1,6 +1,5 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { topnavbar } from './cssmodules/navigationbar.module.css'
 
 const Footer: React.FC = () => {
 
@@ -50,14 +49,6 @@ const Footer: React.FC = () => {
     </p>
 
     </div> 
-    
-    <ul className={topnavbar}>
-     <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-     <li><a href="#contact">Contact</a></li>
-     <li><a href="#about">About</a></li>
-    </ul>
-
   </footer>
   )
 }
