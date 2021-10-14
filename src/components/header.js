@@ -34,11 +34,12 @@ const Header = ({ siteTitle }) => (
     </div>
 
     <ul className={topnavbar}>
-     <li><a href="home" className={topnavbaritem}>Home</a></li>
-     <li><a href="template" className={topnavbaritem}>Templates</a></li>
-     <li><a href="servers" className={topnavbaritem}>Servers</a></li>
-     <li><a href="minecraftmaps" className={topnavbaritem}>Maps</a></li>
-     <li><a href="moderation" className={topnavbaritem}>Moderation</a></li>
+     <li><Link to="/" className={topnavbaritem}>Home</Link></li>
+     <li><Link to="/template/" className={topnavbaritem}>Templates</Link></li>
+     <li><Link to="/servers/" className={topnavbaritem}>Servers</Link></li>
+     <li><Link to="/minecraftmaps/" className={topnavbaritem}>Maps</Link></li>
+     <li><Link to="/moderation/" className={topnavbaritem}>Moderation</Link></li>
+     <li><Link to="/contentcreation/" className={topnavbaritem}>Content</Link></li>
     </ul>
 
   </header>
