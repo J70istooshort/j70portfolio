@@ -14,7 +14,6 @@
  
  const Layout: React.FC = ({ children }) => {
 
-
    const data = useStaticQuery(graphql`
      query SiteTitleQuery {
        site {
@@ -41,13 +40,7 @@
        >
          <main>{children}</main>
 
-         <footer
-           style={{
-             marginTop: `2rem`,
-           }}
-         >
-           © {new Date().getFullYear()} J70
-         </footer>
+         <footer />
        </div>
      </>
    )
