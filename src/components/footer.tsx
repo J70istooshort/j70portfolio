@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
       }}
     >
     <p style={{
-        color: `white`,
+        color: `#1E2328`,
         textDecoration: `none`,
         margin: 0,
       }}>      
