@@ -13,7 +13,7 @@
  import Footer from "./footer"
 
  import "./layout.css"
- 
+
  const Layout: React.FC = ({ children }) => {
 
    const data = useStaticQuery(graphql`

@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 
 const ServersPage = () => (
   <Layout>
-    <Seo title="Template" />
+    <Seo title="Servers" />
     <h1>ServersPage!</h1>
     <p>Welcome to this page :)</p>
     <Link to="/">Go back to the homepage</Link>

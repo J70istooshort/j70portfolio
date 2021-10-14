@@ -2,6 +2,16 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+import { makeStyles } from '@material-ui/core'
+
+const useStyles = makeStyles({
+  navbar: {
+    list-style-type: 'none',
+    margin: 0,
+    padding: 0,
+  }
+}}
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
