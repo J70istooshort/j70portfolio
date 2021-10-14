@@ -36,10 +36,11 @@ const Footer: React.FC = () => {
     <p style={{
         color: `white`,
         textDecoration: `none`,
-      }}>          
+      }}>      
 
-      Last built: {siteBuildMetadata.buildTime}<br>
+      Last built: {siteBuildMetadata.buildTime}<br/>
       © {new Date().getFullYear()} J70  
+      
     </p>
     </div>
   </footer>
