@@ -11,7 +11,7 @@
  
  import Header from "./header"
  import Footer from "./footer"
- 
+
  import "./layout.css"
  
  const Layout: React.FC = ({ children }) => {
@@ -38,9 +38,9 @@
          }}
        >
          <main>{children}</main>
-
-         <Footer />
        </div>
+       
+       <Footer />
      </>
    )
  }

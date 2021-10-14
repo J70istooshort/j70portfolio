@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     graphql`
       query {
         siteBuildMetadata {
-          buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+          buildTime(formatString: "YYYY/MM/DD hh:mm z")
         }
       }
     `,
@@ -33,10 +33,14 @@ const Footer: React.FC = () => {
         maxWidth: 960,
       }}
     >
-    <p>
-      Last built:{siteBuildMetadata.buildTime}
-    </p>
-    © {new Date().getFullYear()} J70
+    <h1>          
+      style={{
+        color: `white`,
+        textDecoration: `none`,
+      }}
+      Last built: {siteBuildMetadata.buildTime}
+      © {new Date().getFullYear()} J70  
+    </h1>
     </div>
   </footer>
   )
