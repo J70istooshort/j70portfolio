@@ -44,4 +44,7 @@ export const query = graphql`
     }
   }
 `
+<<<<<<< HEAD
+>>>>>>> parent of 0a02ba8 (moved latest update)
+=======
 >>>>>>> parent of 0a02ba8 (moved latest update)
