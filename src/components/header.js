@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import { topnavbar } from './cssmodules/navigationbar.module.css'
+import { topnavbar, topnavbaritem } from './cssmodules/navigationbar.module.css'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -34,12 +34,12 @@ const Header = ({ siteTitle }) => (
     </div>
 
     <ul className={topnavbar}>
-     <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-     <li><a href="#contact">Contact</a></li>
-     <li><a href="#about">About</a></li>
+     <li><a class="active" href="#home" className={topnavbaritem}>Home</a></li>
+     <li><a href="#news" className={topnavbaritem}>News</a></li>
+     <li><a href="#contact" className={topnavbaritem}>Contact</a></li>
+     <li><a href="#about" className={topnavbaritem}>About</a></li>
     </ul>
-    
+
   </header>
 )
 
