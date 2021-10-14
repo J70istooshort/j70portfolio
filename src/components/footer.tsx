@@ -24,23 +24,25 @@ const Footer: React.FC = () => {
       style={{
         marginTop: `2rem`,
         background: `#F2E202`,
+        bottom: 0,
     }}
   >
     <div
       style={{
         padding: `1.45rem 1.45rem`,
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 1960,
       }}
     >
     <p style={{
         color: `white`,
         textDecoration: `none`,
+        margin: 0,
       }}>      
 
       Last built: {siteBuildMetadata.buildTime}<br/>
       © {new Date().getFullYear()} J70  
-      
+
     </p>
     </div>
   </footer>
