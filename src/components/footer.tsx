@@ -33,14 +33,14 @@ const Footer: React.FC = () => {
         maxWidth: 960,
       }}
     >
-    <h1 style={{
+    <p style={{
         color: `white`,
         textDecoration: `none`,
       }}>          
 
-      Last built: {siteBuildMetadata.buildTime}
+      Last built: {siteBuildMetadata.buildTime}<br>
       © {new Date().getFullYear()} J70  
-    </h1>
+    </p>
     </div>
   </footer>
   )
