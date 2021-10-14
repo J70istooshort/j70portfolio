@@ -19,9 +19,7 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
         }
-      site {
-          buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-        }
+      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
       }
     }
   `)
