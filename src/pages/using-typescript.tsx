@@ -5,12 +5,6 @@ import { PageProps, Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-type DataProps = {
-  site: {
-    buildTime: string
-  }
-}
-
 const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
     <Seo title="Using TypeScript" />
@@ -30,7 +24,6 @@ const UsingTypescript: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       <a href="https://www.gatsbyjs.com/docs/typescript/">
         documentation about TypeScript
       </a>
-      .
     </p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>

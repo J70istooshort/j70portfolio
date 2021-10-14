@@ -23,6 +23,12 @@ const Layout = ({ children }) => {
     }
   `)
 
+  type DataProps = {
+    site: {
+      buildTime: string
+    }
+  }
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
@@ -40,7 +46,6 @@ const Layout = ({ children }) => {
         margin: `0 auto`,
         maxWidth: 1960,
         background: `#F2E202`,
-        maxWidth: 1960,
         MarginTop: `3rem`,
       }}
         >
@@ -50,7 +55,7 @@ const Layout = ({ children }) => {
             You're currently on the page "{path}" which was built on{" "}
             {data.site.buildTime}.
           </p>
-          
+
         </footer>
       </div>
     </>
