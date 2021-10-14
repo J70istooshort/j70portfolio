@@ -1,5 +1,4 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { PageProps, Link, graphql } from "gatsby"
 
 type DataProps = {
@@ -8,7 +7,7 @@ type DataProps = {
   }
 }
 
-const Footer: React.FC<PageProps<DataProps>> = ({ data}) => (
+const Footer: React.FC<PageProps<DataProps>> = ({data}) => (
   <header
     style={{
       marginTop: `2rem`,
