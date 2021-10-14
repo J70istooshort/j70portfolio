@@ -24,9 +24,8 @@
           siteBuildMetadata {
             buildTime(formatString: "YYYY-MM-DD HH:mm z")
           }
-         }
-       }
-     }
+        }
+      }
    `)
  
    return (
