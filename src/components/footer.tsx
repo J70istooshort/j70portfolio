@@ -8,7 +8,7 @@ type DataProps = {
   }
 }
 
-const Footer: React.FC<PageProps<DataProps>> = ({ data, path }) => (
+const Footer: React.FC<PageProps<DataProps>> = ({ data}) => (
   <header
     style={{
       marginTop: `2rem`,
@@ -23,7 +23,7 @@ const Footer: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       }}
     >
     <p>
-      You're currently on the page "{path}" which was built on{" "}
+      Last build:{" "}
       {data.site.buildTime}.
       © {new Date().getFullYear()} J70
     </p>
