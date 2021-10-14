@@ -32,16 +32,16 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-
-    <ul className={topnavbar}>
-     <li><Link to="/" className={topnavbaritem}>Home</Link></li>
-     <li><Link to="/template/" className={topnavbaritem}>Templates</Link></li>
-     <li><Link to="/servers/" className={topnavbaritem}>Servers</Link></li>
-     <li><Link to="/minecraftmaps/" className={topnavbaritem}>Maps</Link></li>
-     <li><Link to="/moderation/" className={topnavbaritem}>Moderation</Link></li>
-     <li><Link to="/contentcreation/" className={topnavbaritem}>Content</Link></li>
-    </ul>
-
+    <div>
+     <ul className={topnavbar}>
+      <li><Link to="/" >Home</Link></li>
+      <li><Link to="/template/" className={topnavbaritem}>Templates</Link></li>
+      <li><Link to="/servers/" className={topnavbaritem}>Servers</Link></li>
+      <li><Link to="/minecraftmaps/" className={topnavbaritem}>Maps</Link></li>
+      <li><Link to="/moderation/" className={topnavbaritem}>Moderation</Link></li>
+      <li><Link to="/contentcreation/" className={topnavbaritem}>Content</Link></li>
+     </ul>
+    </div>
   </header>
 )
 
