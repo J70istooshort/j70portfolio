@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
    <footer
       style={{
         marginTop: `2rem`,
-        background: `#F2E202`,
+        background: `#3B3F46`,
         bottom: 0,
     }}
   >
