@@ -7,17 +7,18 @@ const Footer: React.FC = () => {
     siteBuildMetadata,
   }: {
     siteBuildMetadata: {
-      lastBuildTime: string
+      buildTime: string
     }
   } = useStaticQuery(
     graphql`
       query {
         siteBuildMetadata {
-          buildTime(formatString: "YYYY-MM-DD HH:mm z")
+          buildTime(formatString: "YYYY-MM-DD hh:mm a z")
         }
       }
     `,
   )
+
   return (
    <footer
       style={{
@@ -27,15 +28,15 @@ const Footer: React.FC = () => {
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 1960,
         padding: `1.45rem 1.45rem`,
+        margin: `0 auto`,
+        maxWidth: 960,
       }}
     >
     <p>
-      Last build:{siteBuildMetadata.lastBuildTime}.
-      © {new Date().getFullYear()} J70
+      Last built:{siteBuildMetadata.buildTime}
     </p>
+    © {new Date().getFullYear()} J70
     </div>
   </footer>
   )
