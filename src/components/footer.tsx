@@ -1,17 +1,28 @@
 import * as React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
-type DataProps = {
-  site: {
-    buildTime: string
-  }
-}
+const Footer: React.FC = () => {
 
-const Footer: React.FC<PageProps<DataProps>> = ({data}) => (
-  <header
-    style={{
-      marginTop: `2rem`,
-      background: `#F2E202`,
+  const {
+    siteBuildMetadata,
+  }: {
+    siteBuildMetadata: {
+      lastBuildTime: string
+    }
+  } = useStaticQuery(
+    graphql`
+      query {
+        siteBuildMetadata {
+          buildTime(formatString: "YYYY-MM-DD HH:mm z")
+        }
+      }
+    `,
+  )
+  return (
+   <footer
+      style={{
+        marginTop: `2rem`,
+        background: `#F2E202`,
     }}
   >
     <div
@@ -22,21 +33,12 @@ const Footer: React.FC<PageProps<DataProps>> = ({data}) => (
       }}
     >
     <p>
-      Last build:{" "}
-      {data.site.buildTime}.
+      Last build:{siteBuildMetadata.lastBuildTime}.
       © {new Date().getFullYear()} J70
     </p>
     </div>
-  </header>
-)
+  </footer>
+  )
+}
 
 export default Footer
-
-export const query = graphql`
-  {
-    site {
-      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-    }
-  }
-`
-
