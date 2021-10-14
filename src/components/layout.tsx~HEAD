@@ -19,6 +19,7 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
         }
+      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
       }
     }
   `)
@@ -40,8 +41,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        
         <footer
+<<<<<<< HEAD:src/components/layout.tsx
       style={{
         margin: `0 auto`,
         maxWidth: 1960,
@@ -56,6 +57,13 @@ const Layout = ({ children }) => {
             {data.site.buildTime}.
           </p>
 
+=======
+          style={{
+            marginTop: `2rem`,
+          }}
+        >
+          © {new Date().getFullYear()} J70
+>>>>>>> parent of 0a02ba8 (moved latest update):src/components/layout.js
         </footer>
       </div>
     </>
@@ -66,4 +74,8 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
+<<<<<<< HEAD:src/components/layout.tsx
 export default Layout
+=======
+export default Layout
+>>>>>>> parent of 0a02ba8 (moved latest update):src/components/layout.js
