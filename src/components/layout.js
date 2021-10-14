@@ -34,12 +34,23 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        
         <footer
-          style={{
-            marginTop: `2rem`,
-          }}
+      style={{
+        margin: `0 auto`,
+        maxWidth: 1960,
+        background: `#F2E202`,
+        maxWidth: 1960,
+        MarginTop: `3rem`,
+      }}
         >
           © {new Date().getFullYear()} J70
+
+          <p>
+            You're currently on the page "{path}" which was built on{" "}
+            {data.site.buildTime}.
+          </p>
+          
         </footer>
       </div>
     </>
@@ -51,3 +62,11 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+export const query = graphql`
+  {
+    site {
+      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
+    }
+  }
+`
