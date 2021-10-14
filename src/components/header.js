@@ -12,6 +12,7 @@ const useStyles = makeStyles({
   }
 }}
 
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
