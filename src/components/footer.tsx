@@ -25,7 +25,6 @@ const Footer: React.FC = () => {
         marginTop: `2rem`,
         background: `#F6B534`,
         bottom: 0,
-        position: 'fixed',
         padding: '10px 10px 0px 10px',
         width: '100%',
     }}
