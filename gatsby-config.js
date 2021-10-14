@@ -23,7 +23,7 @@ module.exports = {
         name: `J70istooshort-portfolio`,
         short_name: `J70`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#3B3F46`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
