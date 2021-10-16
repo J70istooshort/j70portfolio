@@ -5,14 +5,16 @@
     overflow: hidden;
     background-color: #2A2E34;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    height: auto;
   }
 
 .topnavbaritem {
   float: left;
-  display: flex;
+  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
