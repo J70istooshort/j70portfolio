@@ -13,6 +13,7 @@
   }
 
 .topnavbaritem {
+  margin: 0;
   float: left;
   display: block;
   color: white;
