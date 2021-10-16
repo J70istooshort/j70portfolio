@@ -25,13 +25,12 @@ const Footer: React.FC = () => {
         marginTop: `2rem`,
         background: `#F6B534`,
         bottom: 0,
-        padding: '10px 10px 0px 10px',
         width: '100%',
     }}
   >
     <div
       style={{
-        padding: `1.45rem 1.45rem`,
+        padding: `14px`,
         margin: `0 auto`,
         maxWidth: 1960,
       }}
