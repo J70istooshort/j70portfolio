@@ -31,12 +31,12 @@ const Header = ({ siteTitle }) => (
     </div>
 
      <ul className={topnavbar}>
-       <li><Link to="/" className={topnavbaritem}>Home</Link></li>
-       <li><Link to="/servers/" className={topnavbaritem}>Servers</Link></li>
-       <li><Link to="/minecraftmaps/" className={topnavbaritem}>Maps</Link></li>
-       <li><Link to="/moderation/" className={topnavbaritem}>Moderation</Link></li>
-       <li><Link to="/contentcreation/" className={topnavbaritem}>Content</Link></li>
-       <li><Link to="/builds/" className={topnavbaritem}>Builds</Link></li>
+       <li className={topnavbaritem}><Link to="/">Home</Link></li>
+       <li className={topnavbaritem}><Link to="/servers/">Servers</Link></li>
+       <li className={topnavbaritem}><Link to="/minecraftmaps/">Maps</Link></li>
+       <li className={topnavbaritem}><Link to="/moderation/">Moderation</Link></li>
+       <li className={topnavbaritem}><Link to="/contentcreation/">Content</Link></li>
+       <li className={topnavbaritem}><Link to="/builds/">Builds</Link></li>
      </ul>
 
 
