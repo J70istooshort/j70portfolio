@@ -12,7 +12,7 @@
  import Header from "./header"
  import Footer from "./footer"
 
- import { pageContent } from './cssmodules/layout.module.css'
+ import { pageContent, pageWrapper} from './cssmodules/layout.module.css'
  import "./layout.css"
 
  const Layout: React.FC = ({ children }) => {
@@ -29,11 +29,13 @@
  
    return (
      <>
-       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <div className = {pageWrapper}>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
-       <main className = {pageContent}>{children}</main>
+        <main className = {pageContent}>{children}</main>
 
-       <Footer/>
+        <Footer/>
+       </div>
      </>
    )
  }
