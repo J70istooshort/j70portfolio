@@ -1,7 +1,7 @@
 .topnavbar {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 14px;
     overflow: hidden;
     background-color: #2A2E34;
     display: flex;
