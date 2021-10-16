@@ -36,6 +36,7 @@
         <main className = {pageContent}>{children}</main>
 
         <Footer className = {footer}/>
+        
        </div>
      </>
    )

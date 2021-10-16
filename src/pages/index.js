@@ -18,11 +18,11 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
-      <Link to="/template/">Go to template page</Link> <br />
       <Link to="/minecraftmaps/">My maps!</Link> <br />
       <Link to="/servers/">Servers I run</Link> <br />
       <Link to="/moderation/">Stuff I mod</Link> <br />
       <Link to="/contentcreation/">Content creation</Link> <br />
+      <Link to="/builds/">Builds</Link> <br />
     </p>
   </Layout>
 )
