@@ -32,6 +32,7 @@ const Header = ({ siteTitle }) => (
 
      <ul className={topnavbar}>
        <li className = {topnavbarlistitem}><Link to="/" className={topnavbaritem}>Home</Link></li>
+       <li className = {topnavbarlistitem}><Link to="/about/" className={topnavbaritem}>About me</Link></li>
        <li className = {topnavbarlistitem}><Link to="/servers/" className={topnavbaritem}>Servers</Link></li>
        <li className = {topnavbarlistitem}><Link to="/minecraftmaps/" className={topnavbaritem}>Maps</Link></li>
        <li className = {topnavbarlistitem}><Link to="/moderation/" className={topnavbaritem}>Moderation</Link></li>

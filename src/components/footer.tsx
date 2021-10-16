@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     graphql`
       query {
         siteBuildMetadata {
-          buildTime(formatString: "YYYY/MM/DD at hh:mm z")
+          buildTime(formatString: "YYYY-MM-DD hh:mm z")
         }
       }
     `,
