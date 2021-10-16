@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import { topnavbar, topnavbaritem } from './cssmodules/navigationbar.module.css'
+import { topnavbar, topnavbaritem, topnavbarlistitem } from './cssmodules/navigationbar.module.css'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -31,12 +31,12 @@ const Header = ({ siteTitle }) => (
     </div>
 
      <ul className={topnavbar}>
-       <li><Link to="/" className={topnavbaritem}>Home</Link></li>
-       <li><Link to="/servers/" className={topnavbaritem}>Servers</Link></li>
-       <li><Link to="/minecraftmaps/" className={topnavbaritem}>Maps</Link></li>
-       <li><Link to="/moderation/" className={topnavbaritem}>Moderation</Link></li>
-       <li><Link to="/contentcreation/" className={topnavbaritem}>Content</Link></li>
-       <li><Link to="/builds/" className={topnavbaritem}>Builds</Link></li>
+       <li className = {topnavbarlistitem}><Link to="/" className={topnavbaritem}>Home</Link></li>
+       <li className = {topnavbarlistitem}><Link to="/servers/" className={topnavbaritem}>Servers</Link></li>
+       <li className = {topnavbarlistitem}><Link to="/minecraftmaps/" className={topnavbaritem}>Maps</Link></li>
+       <li className = {topnavbarlistitem}><Link to="/moderation/" className={topnavbaritem}>Moderation</Link></li>
+       <li className = {topnavbarlistitem}><Link to="/contentcreation/" className={topnavbaritem}>Content</Link></li>
+       <li className = {topnavbarlistitem}><Link to="/builds/" className={topnavbaritem}>Builds</Link></li>
      </ul>
 
 
