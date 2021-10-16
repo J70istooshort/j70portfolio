@@ -1,0 +1,7 @@
+.pageContent {
+    margin: 'auto';
+    padding-right: 28;
+    padding-left: 28;
+    flex: '1';
+    width: '100%';
+}
