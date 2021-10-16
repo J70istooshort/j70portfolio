@@ -2,14 +2,13 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #2A2E34;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    height: auto;
+    height: 54;
   }
 
 .topnavbaritem {
