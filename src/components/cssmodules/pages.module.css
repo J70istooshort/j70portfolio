@@ -1,14 +1,16 @@
 .serverbox {
     border-radius: 15px 50px;
-    background: #82c02b;
+    background: #213802;
     padding: 20px;
-    width: 200px;
-    height: 150px;
+    width: 600px;
+    height: 300px;
+    margin: auto;
   }
+
 .serverwrapper{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
   height: auto;
+
 }
