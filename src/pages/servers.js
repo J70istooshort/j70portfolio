@@ -11,7 +11,7 @@ const ServersPage = () => (
     <Seo title="Servers" />
 
     <div className = {serverwrapper}>
-     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
+     <div className = {serverboxwrapper} style={{background:'..componets/images/minecraftbanner'}}><div className = {serverbox}/></div>
      <div className = {serverboxwrapper}><div className = {serverbox}/></div>
      <div className = {serverboxwrapper}><div className = {serverbox}/></div>
      <div className = {serverboxwrapper}><div className = {serverbox}/></div>
