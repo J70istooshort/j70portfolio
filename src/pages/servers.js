@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import { serverbox,serverwrapper } from 'src/components/cssmodules/pages.module.css'
+import { serverbox,serverwrapper } from '..components/cssmodules/pages.module.css'
 
 const ServersPage = () => (
   <Layout>
