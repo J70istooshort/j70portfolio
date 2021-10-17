@@ -1,10 +1,16 @@
 .serverbox {
-    border-radius: 15px 50px;
+    border-radius: 30px 100px;
     background: #213802;
     padding: 20px;
     width: 800px;
     height: 300px;
-    margin: 30px, auto;
+    margin: auto;
+  }
+
+.serverboxwrapper {
+	position: relative;
+    width: 100%;
+    padding-bottom: 40%;  
   }
 
 .serverwrapper{

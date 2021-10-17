@@ -4,20 +4,19 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import { serverbox,serverwrapper } from '../components/cssmodules/pages.module.css'
+import { serverbox,serverwrapper,serverboxwrapper } from '../components/cssmodules/pages.module.css'
 
 const ServersPage = () => (
   <Layout>
     <Seo title="Servers" />
 
     <div className = {serverwrapper}>
-     <div className = {serverbox}/>
-     <div className = {serverbox}/>
-     <div className = {serverbox}/>
-
-     <div className = {serverbox}/>
-     <div className = {serverbox}/>
-     <div className = {serverbox}/>
+     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
+     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
+     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
+     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
+     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
+     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
     </div>
   </Layout>
 )
