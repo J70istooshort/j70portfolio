@@ -1,0 +1,61 @@
+.j70server{
+    background-image: url("../../images/minecraftbanner.png");
+    position: relative;
+    border-radius: 10% / 50%;
+    width: 30%;
+    min-width: 300px;
+    margin: 2% auto;
+    background-size: cover;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 12px 40px 0 rgba(255, 255, 255, 0.19);
+}
+
+.j70server:hover{
+	-webkit-animation: bulge 0.1s ease-in-out 1 both;
+	        animation: bulge 0.1s ease-in-out 1 both;
+}
+
+.serverwrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+}
+
+.serverinner {
+    margin-top: 40%;
+    margin-bottom: 10%;
+}
+
+ @-webkit-keyframes bulge {
+    from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+      100% {
+        -webkit-transform: scale(1.03);
+                transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+  }
+  @keyframes bulge {
+    from {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+      }
+      100% {
+        -webkit-transform: scale(1.03);
+                transform: scale(1.03);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+      }
+  }
+  

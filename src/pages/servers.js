@@ -1,24 +1,24 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import { serverbox,serverwrapper,serverboxwrapper } from '../components/cssmodules/pages.module.css'
+import * as servers from '../components/cssmodules/servers.module.css'
+import * as pages from '../components/cssmodules/pages.module.css'
 
 const ServersPage = () => (
   <Layout>
     <Seo title="Servers" />
 
-    <div className = {serverwrapper}>
-     <div className = {serverboxwrapper} style={{background:'..componets/images/minecraftbanner'}}><div className = {serverbox}/></div>
-     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
-     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
-     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
-     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
-     <div className = {serverboxwrapper}><div className = {serverbox}/></div>
+    <div className={pages.pageheading}>Servers I work on</div>
+
+    <div className = {servers.serverwrapper}>
+      <div className = {servers.j70server}><div className = {servers.serverinner} /></div>
+      <div className = {servers.j70server}><div className = {servers.serverinner} /></div>
+      <div className = {servers.j70server}><div className = {servers.serverinner} /></div>
+      <div className = {servers.j70server}><div className = {servers.serverinner} /></div>
+      <div className = {servers.j70server}><div className = {servers.serverinner} /></div>
     </div>
   </Layout>
 )
-
 export default ServersPage

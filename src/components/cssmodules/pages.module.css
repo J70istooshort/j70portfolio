@@ -1,19 +1,8 @@
-.serverbox {
-    margin-top: 40%;
-    margin-bottom: 10%;
-  }
-
-.serverboxwrapper {
-	position: relative;
-    border-radius: 15% / 75%;
-    background: #213802;
-    width: 70%;
-    margin: 2% auto;
-  }
-
-.serverwrapper{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: auto;
+.pageheading{
+  text-align:center;
+  color: aliceblue;
+  text-shadow: 2px 2px black;
+  font-size:10vw;
+  height:10vw;
+  line-height: 10vw;
 }
