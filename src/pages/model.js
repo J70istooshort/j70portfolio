@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 
 ReactModal.setAppElement('#___gatsby')
 
-class IndexPage extends Component {
+class ModelPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -46,4 +46,4 @@ class IndexPage extends Component {
   }
 }
 
-export default IndexPage
+export default ModelPage

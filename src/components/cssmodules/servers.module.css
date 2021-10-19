@@ -1,61 +1,161 @@
-.j70server{
-    background-image: url("../../images/minecraftbanner.png");
-    position: relative;
-    border-radius: 10% / 50%;
-    width: 30%;
-    min-width: 300px;
-    margin: 2% auto;
-    background-size: cover;
-    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 12px 40px 0 rgba(255, 255, 255, 0.19);
+.j70server {
+  background-image: url("../../images/minecraftbanner.png");
+  position: relative;
+  border-radius: 10% / 50%;
+  width: 30%;
+  min-width: 300px;
+  margin: 2% auto;
+  background-size: cover;
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2),
+    0 12px 40px 0 rgba(255, 255, 255, 0.19);
+  border: none;
 }
 
-.j70server:hover{
-	-webkit-animation: bulge 0.1s ease-in-out 1 both;
-	        animation: bulge 0.1s ease-in-out 1 both;
+.j70server:hover {
+  -webkit-animation: bulgesmall 0.1s ease-in-out 1 both;
+  animation: bulgesmall 0.1s ease-in-out 1 both;
 }
 
-.serverwrapper{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: auto;
+.serverwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
 }
 
 .serverinner {
-    margin-top: 40%;
-    margin-bottom: 10%;
+  margin-top: 40%;
+  margin-bottom: 10%;
 }
 
- @-webkit-keyframes bulge {
-    from {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-transform-origin: center center;
-                transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
-      }
-      100% {
-        -webkit-transform: scale(1.03);
-                transform: scale(1);
-        -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
-      }
+.servermodalcontainer {
+  position: relative;
+}
+
+.servermodal {
+  background-color: rgb(66, 66, 66);
+  height: 40%;
+  width: 40%;
+  min-width: 350px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.modalheading{
+    padding:3%;
+    text-align:center;
+    color: whitesmoke;
+    font-size: 3vh;
+}
+
+.modaltext{
+    padding: 2%;
+    text-align:left;
+    color: white;
+    font-size: 2vh;
+}
+
+.modalleft{
+    padding:3%;
+    text-align:center;
+    color: whitesmoke;
+    font-size: 10vh;
+    position: absolute;
+    bottom: 2vh;
+    left: 0vh;
+    background: none;
+    border: none;
+}
+
+.modalright{
+    padding:3%;
+    text-align:center;
+    color: whitesmoke;
+    font-size: 10vh;
+    position: absolute;
+    bottom: 2vh;
+    right: 0vh;
+    background: none;
+    border: none;
+}
+
+.modalright:hover {
+    -webkit-animation: bulgelarge 0.1s ease-in-out 1 both;
+    animation: bulgelarge 0.1s ease-in-out 1 both;
   }
-  @keyframes bulge {
-    from {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-transform-origin: center center;
-                transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-                animation-timing-function: ease-out;
-      }
-      100% {
-        -webkit-transform: scale(1.03);
-                transform: scale(1.03);
-        -webkit-animation-timing-function: ease-in;
-                animation-timing-function: ease-in;
-      }
+
+  .modalleft:hover {
+    -webkit-animation: bulgelarge 0.1s ease-in-out 1 both;
+    animation: bulgelarge 0.1s ease-in-out 1 both;
   }
   
+@-webkit-keyframes bulgesmall {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bulgesmall {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes bulgelarge {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }
+  @keyframes bulgelarge {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  }
