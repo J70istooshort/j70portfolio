@@ -10,7 +10,7 @@ const ServersPage = () => (
   <Layout>
     <Seo title="Servers" />
 
-    <div className={pages.pageheading}>Servers I work on</div>
+    <div className={pages.pageheading}>Servers I worked on</div>
 
     <div className = {servers.serverwrapper}>
       <div className = {servers.j70server}><div className = {servers.serverinner} /></div>
