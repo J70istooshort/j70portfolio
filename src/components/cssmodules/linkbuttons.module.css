@@ -1,0 +1,103 @@
+.discord {
+  background-image: url("../../images/discord.png");
+  background-size: cover;
+  margin: 0 8px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  float:right;
+  display: block;
+}
+
+.twitter {
+    background-image: url("../../images/twitter.png");
+    background-size: cover;
+    margin: 0 8px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    float:right;
+    display: block;
+  }
+
+  .youtube {
+    background-image: url("../../images/youtube.png");
+    background-size: cover;
+    margin: 0 8px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    float:right;
+    display: block;
+  }
+
+  .tiktok {
+    background-image: url("../../images/tiktok.png");
+    background-size: cover;
+    margin: 0 8px;
+    float:right;
+    display: block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .twitch {
+    background-image: url("../../images/twitch.png");
+    background-size: cover;
+    margin: 0 8px;
+    float:right;
+    display: block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.discord:hover {
+    animation: jello-horizontal 0.7s;
+  }
+  
+  .twitch:hover {
+    animation: jello-horizontal 0.7s;
+  }
+
+  .tiktok:hover {
+    animation: jello-horizontal 0.7s;
+  }
+
+  .youtube:hover {
+    animation: jello-horizontal 0.7s;
+  }
+
+  .twitter:hover {
+    animation: jello-horizontal 0.7s;
+  }
+  @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
